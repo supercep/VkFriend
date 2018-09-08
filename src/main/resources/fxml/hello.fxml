@@ -14,7 +14,7 @@
     <children>
       <TabPane fx:id="tabPane" layoutX="5.0" layoutY="5.0" prefHeight="491.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <tabs>
-          <Tab fx:id="tabPaneReg" text="Регистрация">
+          <Tab fx:id="tabPaneReg" text="Вход">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="318.0" prefWidth="600.0">
                      <children>
@@ -23,18 +23,18 @@
                                   <Font size="14.0" fx:id="x1" />
                               </font>
                           </Button>
-                          <TextField fx:id="sonameField" layoutX="241.0" layoutY="137.0" prefHeight="23.0" prefWidth="118.0" promptText="Login" />
                           <Label layoutX="194.0" layoutY="75.0" prefHeight="36.0" prefWidth="213.0" text="Welcome to VkFriend">
                               <font>
                                   <Font size="22.0" />
                               </font>
                           </Label>
-                        <TextField fx:id="nameField" layoutX="241.0" layoutY="192.0" prefHeight="23.0" prefWidth="118.0" promptText="Password" />
+                        <TextField fx:id="nameField" layoutX="241.0" layoutY="137.0" prefHeight="25.0" prefWidth="118.0" promptText="Login" />
                           <Label fx:id="helloTab" layoutX="30.0" layoutY="300.0" prefHeight="36.0" prefWidth="540.0" textAlignment="CENTER">
                               <font>
                                   <Font size="22.0" />
                               </font>
                           </Label>
+                        <PasswordField fx:id="sonameField" layoutX="241.0" layoutY="192.0" prefHeight="25.0" prefWidth="118.0" promptText="Password" />
                      </children>
                   </AnchorPane>
             </content>
