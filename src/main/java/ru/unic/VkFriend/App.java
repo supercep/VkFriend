@@ -24,7 +24,7 @@ public class App extends Application {
     @Override
     public void start(Stage primaryStage) {
         try {
-            AnchorPane root = (AnchorPane) FXMLLoader.load(App.class.getResource("/fxml/hello.fxml"));
+            AnchorPane root = (AnchorPane) FXMLLoader.load(App.class.getResource("../../../fxml/hello.fxml"));
             Scene scene = new Scene(root);
             primaryStage.setScene(scene);
             primaryStage.setTitle("VkFriend");

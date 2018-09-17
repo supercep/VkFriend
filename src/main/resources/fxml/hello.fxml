@@ -39,26 +39,17 @@
                   </AnchorPane>
             </content>
           </Tab>
-            <Tab fx:id="tabPaneCharts" text="Charts">
+            <Tab fx:id="tabPaneFr" disable="true" text="Удаление собачек">
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <BarChart fx:id="barChart" layoutX="14.0" layoutY="60.0" prefHeight="294.0" prefWidth="573.0">
-                          <xAxis>
-                            <CategoryAxis prefHeight="23.0" prefWidth="493.0" side="BOTTOM" fx:id="x" />
-                          </xAxis>
-                          <yAxis>
-                            <NumberAxis fx:id="y" label="Высота" side="LEFT" />
-                          </yAxis>
-                        </BarChart>
-                        <Button fx:id="createBarButton" layoutX="47.0" layoutY="26.0" mnemonicParsing="false" onAction="#createBar" text="Построить" />
-                        <TextField layoutX="159.0" layoutY="26.0" promptText="xValue" fx:id="xValue" />
-                        <TextField fx:id="yValue" layoutX="362.0" layoutY="26.0" promptText="yValue" />
+                        <Button fx:id="createBarButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#createBar" text="Удалить всех собачек!" />
+                        <TextArea fx:id="frArea" layoutX="10.0" layoutY="40.0" prefHeight="333.0" prefWidth="580.0" />
                      </children>
                   </AnchorPane>
                </content>
             </Tab>
-            <Tab fx:id="tabPaneAbout1" onSelectionChanged="#selectStat" text="Статистика">
+            <Tab fx:id="tabPaneAbout1" disable="true" onSelectionChanged="#selectStat" text="Статистика">
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="272.0" prefWidth="600.0">
                      <children>
