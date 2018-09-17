@@ -300,16 +300,18 @@ public class MainController implements Initializable {
         String friendList = preFriendList.split(":")[3].replace("[", "").replace("]", "").replace("}", "");
         String getInfo = methodController("users.get", "user_ids=" + friendList, access_token);
         ArrayList finRes = jsonParse(getInfo);
+        int sch = 0;
         String delHist = new String();
         if (finRes.size() > 0) {
             for (int i = 0; i < finRes.size(); i++) {
                 methodController("friends.delete", "user_id=" + finRes.get(i), access_token);
                 delHist += finRes.get(i) + ", ";
+                sch++;
             }
-            frArea.setText("Мы удалили следующих друзей- " + delHist);
+            frArea.setText("Мы удалили следующих друзей- " + delHist + "\nВсего удалено - " + sch + " друзей");
+        }else {
+            frArea.setText("У Вас нет забаненных или удаленных друзей!");
         }
-        frArea.setText("У Вас нет забаненных или удаленных друзей!");
-
     }
 
     public void alert(String title, String header, String content) {
