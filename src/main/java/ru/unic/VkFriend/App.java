@@ -9,22 +9,21 @@ import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
+/* TODO
+Solve the problem with fxml path
+*/
 
-/**
- * Hello world!
- *
- */
 public class App extends Application {
 
 
     public static void main(String[] args) {
         Application.launch(App.class, (java.lang.String[])null);
     }
-
+    AnchorPane root;
     @Override
     public void start(Stage primaryStage) {
         try {
-            AnchorPane root = (AnchorPane) FXMLLoader.load(App.class.getResource("/fxml/hello.fxml"));
+            root = FXMLLoader.load(App.class.getResource("fxml/hello.fxml"));
             Scene scene = new Scene(root);
             primaryStage.setScene(scene);
             primaryStage.setTitle("VkFriend");
